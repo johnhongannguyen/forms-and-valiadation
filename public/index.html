@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validations and Forms</title>
+</head>
+<body>
+    <h2>Create a new Dog</h2>
+    <!--/* post: create new one in server */-->
+    <form action="/dogs" method="POST">  
+        <label>
+            Enter the name of the dog
+            <input type="text" name="name">
+        </label>
+        
+        <label>
+            Enter the name of the dog
+            <input type="text" name="type">
+        </label>
+        
+        <input type="submit" value="Submit new dog">
+    </form>
+    
+    <h3> Get Dogs by Type</h3>
+    <form method="GET" action="/dogs">
+        <label>
+            Enter type of dog you would like to get.
+            <input type="text" name="type">
+        </label>
+        <input type="submit" value="get dogs">
+    </form>
+</body>
+</html>
